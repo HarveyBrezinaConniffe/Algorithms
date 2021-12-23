@@ -54,10 +54,14 @@ class VanillaBST:
 
 searchTree = VanillaBST()
 
-searchTree.insert(20, "Harvey")
-searchTree.insert(17, "Jasper")
-searchTree.insert(24, "Maciej")
+print("Testing BST")
 
-print(searchTree.search(20))
-print(searchTree.search(17))
-print(searchTree.search(24))
+searchTree.insert(20, "Test1")
+searchTree.insert(17, "Test2")
+searchTree.insert(24, "Test3")
+
+assert searchTree.search(20) == "Test1"
+assert searchTree.search(17) == "Test2"
+assert searchTree.search(24) == "Test3"
+
+print("All tests passed!")
